@@ -47,6 +47,17 @@
               android:padding="4dp"
               android:hint="RealName"/>
 
+          <TextView
+              android:id="@+id/firstAppearance"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/hero_image"
+              android:layout_below="@id/textRealName"
+              android:layout_marginBottom="4dp"
+              android:padding="4dp"
+              android:hint="1st Appearance"
+              />
+
       </RelativeLayout>
         
 
