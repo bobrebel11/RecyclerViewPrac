@@ -42,8 +42,8 @@ public class MarvelAdapter extends RecyclerView.Adapter<MarvelAdapter.ViewHolder
     Hero hero = heros.get(position);
 
 
-    viewHolder.nameView.setText(hero.getName());
-    viewHolder.realNameView.setText(hero.getRealname());
+    viewHolder.nameView.setText("Screen Name: "+hero.getName());
+    viewHolder.realNameView.setText("Real Name: "+hero.getRealname());
 
         Picasso.get().load(hero.getImageurl()).resize(150,150).centerCrop().into(viewHolder.heroImage);
 
