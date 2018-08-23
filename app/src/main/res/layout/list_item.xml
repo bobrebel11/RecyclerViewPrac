@@ -16,28 +16,38 @@
 
         >
 
-      <LinearLayout
+      <RelativeLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:orientation="vertical"
           android:padding="10dp">
+
+          <ImageView
+              android:id="@+id/hero_image"
+              android:layout_margin="4dp"
+              android:layout_width="150dp"
+              android:layout_height="150dp" />
 
 
           <TextView
               android:id="@+id/textName"
+              android:layout_marginTop="4dp"
+              android:layout_marginBottom="4dp"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:padding="4dp"
+              android:layout_toRightOf="@id/hero_image"
               android:hint="Name"/>
 
           <TextView
               android:id="@+id/textRealName"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/hero_image"
+              android:layout_below="@id/textName"
               android:padding="4dp"
               android:hint="RealName"/>
 
-      </LinearLayout>
+      </RelativeLayout>
         
 
 
