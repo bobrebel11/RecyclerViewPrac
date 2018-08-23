@@ -47,6 +47,8 @@ public class MarvelAdapter extends RecyclerView.Adapter<MarvelAdapter.ViewHolder
 
         Picasso.get().load(hero.getImageurl()).resize(150,150).centerCrop().into(viewHolder.heroImage);
 
+        viewHolder.appearanceView.setText("1st Appearance: "+hero.getFirstappearance());
+
 
     }
 
@@ -63,7 +65,7 @@ public class MarvelAdapter extends RecyclerView.Adapter<MarvelAdapter.ViewHolder
 
         //Declare the views in list item\\
 
-        TextView nameView, realNameView;
+        TextView nameView, realNameView, appearanceView;
         ImageView heroImage;
 
         public ViewHolder(@NonNull View itemView) {
@@ -73,6 +75,7 @@ public class MarvelAdapter extends RecyclerView.Adapter<MarvelAdapter.ViewHolder
             nameView = itemView.findViewById(R.id.textName);
             realNameView = itemView.findViewById(R.id.textRealName);
             heroImage = itemView.findViewById(R.id.hero_image);
+            appearanceView = itemView.findViewById(R.id.firstAppearance);
         }
     }
 }
